@@ -6,6 +6,7 @@ jobs:
   json-linter:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: json-lint
         uses: ocular-d/json-linter@0.0.2
-      - run: fd --extension json --exec jsonlint --quiet --compact
+        
