@@ -1,7 +1,5 @@
 name: learn-github-actions
-on:
-  push:
-    paths: '**.json'
+on: [push, pull_request]
 jobs:
   json-linter:
     runs-on: ubuntu-latest
